@@ -199,6 +199,10 @@ const Canvas: Component = () => {
                 results.poseLandmarks[points.leftHip], results.poseLandmarks[points.rightHip],
                 results.poseLandmarks[points.leftKnee], results.poseLandmarks[points.rightKnee],
                 results.poseLandmarks[points.leftAnkle], results.poseLandmarks[points.rightAnkle],
+                results.poseLandmarks[points.nose], results.poseLandmarks[points.leftEye],
+                results.poseLandmarks[points.rightEye],
+                results.poseLandmarks[points.mouthLeft], results.poseLandmarks[points.mouthRight],
+
             ]
 
 
@@ -271,7 +275,7 @@ const Canvas: Component = () => {
                 <div class="sm:w-full lg:max-w-3xl">
                     <Card>
                         <div class="mb-4 flex justify-center align-middle">
-                            <canvas class="output_canvas" width="640px" height="360px"></canvas>
+                            <canvas class="output_canvas" width="720px" height="480px"></canvas>
                         </div>
 
                         <div
